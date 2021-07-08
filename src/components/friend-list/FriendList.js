@@ -2,16 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const FriendList = ({ friends }) => (
-    <ul class="friend-list">
+    <ul className="friend-list">
         {friends.map(friend => (
-            <li class="item" key={friend.id}>
+            <li className="item" key={friend.id}>
                 {friend.isOnline ? (
-                    <span class="status">☻</span>
+                    <span className="status">☻</span>
                 ) : (
-                    <span class="status">☺</span>   
+                    <span className="status">☺</span>   
                 )}                
-                <img class="avatar" src={friend.avatar} alt={friend.name} width="48" />
-                <p class="name">{friend.name}</p>
+                <img className="avatar" src={friend.avatar} alt={friend.name} width="48" />
+                <p className="name">{friend.name}</p>
             </li>
         ))}
     </ul>
