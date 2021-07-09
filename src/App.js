@@ -12,8 +12,10 @@ import friends from './components/friend-list/friends.json';
 import TransactionHistory from './components/transaction-history/TransactionHistory';
 import transactions from './components/transaction-history/transactions.json';
 
+import baseStyles from './container.module.css';
+
 const App = () => (
-        <div>
+        <div className={baseStyles.container}>
             <Profile
             name={user.name}
             tag={user.tag}
