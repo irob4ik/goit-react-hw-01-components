@@ -8,10 +8,33 @@
 .item {
   display: flex;
   margin-top: 20px;
-  padding: 5px;
+  padding: 10px;
   align-items: center;
   width: 300px;
 
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 darkblue;
+}
+
+.statusOn {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.statusOff {
+  composes: statusOn;
+  background-color: red;
+}
+
+.avatar {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.name {
+  color: black;
+  font-size: 18px;
 }

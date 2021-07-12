@@ -1,0 +1,37 @@
+.transactionTable {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tr {
+  text-align: center;
+  height: 30px;
+}
+
+th {
+  height: 40px;
+  width: 180px;
+  border: 1px solid white;
+  border-radius: 4px;
+
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: grey;
+  background-color: cyan;
+}
+
+td {
+  text-transform: capitalize;
+  text-align: left;
+  padding-left: 65px;
+  border: 1px solid lightgray;
+}
+
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+tr:nth-child(odd) {
+  background-color: white;
+}
