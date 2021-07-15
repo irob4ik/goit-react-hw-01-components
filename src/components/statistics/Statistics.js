@@ -4,7 +4,7 @@ import styles from './statistics.module.css'
 
 const Statistics = ({title, stats}) => (
     <section className={styles.statistics}>
-        {title !== null && (<h2 className={styles.title}>{title}</h2>)}
+        {title && (<h2 className={styles.title}>{title}</h2>)}
         
         <ul className={styles.statslist}>
             {stats.map(stat => (
@@ -23,7 +23,7 @@ const Statistics = ({title, stats}) => (
 );
 
 Statistics.defaultProps = {
-    title: null,
+    title: "",
 };
 
 Statistics.propTypes = {
